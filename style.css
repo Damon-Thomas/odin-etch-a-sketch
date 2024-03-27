@@ -1,34 +1,82 @@
 * {
     margin: 0;
     border: 0;
+    padding: 0;
 }
 
 #title {
-    margin: 50px 0 50px ;
+    margin: 50px 0 0 0 ;
 }
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    background-color: rgb(119, 164, 204);
 }
 
 .main {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    
 }
 
 .commands {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 50px;
+    border: solid black;
+    padding: 10px;
+    background-color: lightblue;
 }
 
-/* column of divs made in js will format game */
+
 .game {
     display: flex;
+    flex-wrap: wrap;
+    margin: 100px auto 25px auto;
+    background-color: aliceblue;
+    box-shadow: 5px 5px rgb(101, 147, 187)
+}
+
+.cell {
+    border: 1px solid rgb(119, 164, 204)
+}
+
+.slider-container {
+    margin: 0;
+    width: 450px;
+    padding: 10px 10px;
+    background-color: rgb(230, 230, 158);
+    margin-bottom: 20px;
+    border: solid black;
+    display: flex;
     flex-direction: column;
-    width: 960px;
-    height: auto;
+   
+    
+    
+    
+}
+
+.slider {
+    background-color: aliceblue;
+    align-items: center;
+}
+
+#slider-value {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0px;
+    font-weight: 700;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+button {
+    padding: 10px;
+    width: 125px;
+    background-color: rgb(230, 230, 158);
+    border: solid black 2px;
+    
 }

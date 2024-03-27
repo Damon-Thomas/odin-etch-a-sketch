@@ -9,10 +9,17 @@
 <body>
     <h1 id="title">ETCH-A-SKETCH</h1>
     <div class="main">
-        <div class="commands"></div>
-            <h2>test</h2>
-        <div class="game"></div>
-            <h2>test</h2>
+        <div class="game">
+        </div>
+    </div>
+    <div class="slider-container">
+        <input type="range" min="1" max="100" value="16" class = "slider" id = "slider">
+        <p id ="slider-value"></p>
+    </div>
+    <div class="commands">
+        <button class="rainbow"> Rainbow OFF </button>
+        <button class="shade"> Shading ON </button>
+        <button class="reset"> Reset </button>
     </div>
     <script src="./scripts.js"></script>
 </body>
